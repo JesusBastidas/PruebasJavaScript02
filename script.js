@@ -60,6 +60,42 @@ console.log(numeros);
 numeros.unshift(1);
 console.log(numeros);
 
-/*Buscar elementos dentro de un array: .indexOf() nos retorna la posicion el primer elemento que concuerda con el parametro de la busqueda*/
+/*Buscar elementos dentro de un array: .indexOf() nos retorna la posicion el primer elemento que concuerda con el parametro de la busqueda .
+                                        .lastIndexOf() nos retorna el ultimo indice del elemento que coincida con el parametro de busqueda*/
 
 console.log(numeros.indexOf(6));
+console.log(numeros.pop());
+console.log(numeros);
+numeros.push(7);
+numeros.push(5);
+console.log(numeros);
+console.log(numeros.lastIndexOf(5));
+
+/* .reverse() este metodo invierte el orden de los elementos del array*/
+
+numeros.reverse();
+console.log(numeros);
+
+/* .join('separador') devuelve un string con el separador que se indica, si no se coloca un separador por defecto con coloca comas*/
+
+console.log(numeros.join());
+numeros.reverse();
+console.log(numeros.join(';'));
+
+/* .splice(a,b,items) cambia el contenido de un array. a- indice de inicio
+                                                       b- numero de elementos (opcional)   
+                                                       items - elementos a insertar
+*/
+
+console.log(numeros);
+/* numeros.splice(2);  elimina los elementos a partir de la posicion 2 hasta el final */
+/*numeros.splice(2,2); elimina los elementos a partir de la posicion 2 hasta las posiciones indicadas */
+
+numeros.splice(6,0,8,9,10); /*si b es distinto a 0 elimina la los datos de la posicion indicada, en caso contrario ingresa los valores especificados en items */
+console.log(numeros);
+
+/* .slice(a,b) extrae elementos de un array desde el a hasta b. */
+
+let numerosNuevo = numeros.slice(3,6);
+console.log(numerosNuevo); 
+console.log(numeros);
