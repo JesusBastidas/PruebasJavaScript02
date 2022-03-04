@@ -141,6 +141,63 @@ for(let i=0; i<numerachos.length; i++){
     console.log(`la posicion de i en el array es  ${i} y su valor ${numerachos[i]}`);
 }
 
+/* Bucle for of / for in. sirve para simplificar el bucle. 
+la sintaxis es la siguiente: 
 
+let names =['juan', 'antonio', 'pepe', 'luis'];
+for (let name of names) {
+    console.log(name);
+};
 
+for (let name in names) {
+    console.log(name);
+};
 
+break - rompe el bucle
+continue - continua el bucle pero salta la posicion 
+*/
+for (let conteo of numerachos){
+    if (conteo===0){
+        break
+    }
+    console.log(conteo);
+};
+
+for (let index in numerachos){
+    if (numerachos[index]===0){
+        continue
+    }
+    console.log(index);
+}
+
+/* EJERCICIOS DE REPASO*/
+
+/*let name1 = prompt('Ingresa tu nombre');
+let age =  prompt('Ingresa tu edad');
+let prox = (parseInt(age)+1);
+
+console.log(`Hola ${name1}, tienes ${age} anios y el anio que viene tendras ${prox}`);
+*/
+
+let triangulo 
+let rectangulo 
+let circulo 
+
+/*let b = prompt('inserte la base');
+let h = prompt('isnerte la altura');*/
+
+let figura = prompt('Introduce la figura que deseas calcuar');
+if (figura === triangulo){
+    let b = prompt('inserte la base');
+    let h = prompt('inserte la altura');
+    console.log((parseInt(b)*parseInt(h))/2);
+}else if(figura === rectangulo){
+    let b2 = prompt('inserte la base');
+    let h2 = prompt('inserte la altura');
+    console.log(parseInt(b2)*parseInt(h2));
+}else {
+    if (figura === circulo){
+    let r = prompt('inserte el radio');
+    console.log(Math.PI*(parseInt(r)*parseInt(r)));
+    }
+}
