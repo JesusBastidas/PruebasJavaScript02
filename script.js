@@ -99,3 +99,48 @@ console.log(numeros);
 let numerosNuevo = numeros.slice(3,6);
 console.log(numerosNuevo); 
 console.log(numeros);
+
+/* BUCLES: sirven cuando queremos que un trozo de codigo se repita.. 
+    while: bucle indeterminado, la ejecucion del codigo se repite hasta que se cumla la condicion
+     Sintaxis: while(condicion){
+        codigo a ejecutar
+    };
+    do while: tambien es un bucle indeterminado lo que implica que se repite el codigo hasta que se cumpla la condicion
+     Sintaxis, en este caso dicha sitaxis te compone de dos partes 1. un codigo a ejecutar y 2. una condicion de salida, de la siguiente forma:
+     do{
+         condicion 
+     }while(condicion);
+     */
+
+let password = 'hola';
+/*while (password != 'hola'){
+    password = prompt('Introdusca su password')
+};
+console.log('Fin'); */
+
+/*do{
+    password = prompt('Intruduce tu pass')
+} while (password != 'hola');
+console.log('Finale');*/
+
+/* for: es un bucle determinado lo que implica que se conoce la cantidad de veces que se debe ejecuta el codigo.
+en este tipo de bucle la sintaxis se compone de tres partes: 1. la iniciacion de la variable, 2. el numero de iteraciones(repeticiones), 3. el incremento o decremento
+
+for (let i= 0; i<=n;i++){
+    codigo a ejecutar(lo que deseo que haga en caso de que la condicion este en pie)
+}
+*/
+
+for (let i=0; i<=3;i++){
+    console.log(i);
+};
+
+let numerachos = [21,35,0,15,2];
+
+for(let i=0; i<numerachos.length; i++){
+    console.log(`la posicion de i en el array es  ${i} y su valor ${numerachos[i]}`);
+}
+
+
+
+
