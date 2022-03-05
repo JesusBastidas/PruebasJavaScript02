@@ -187,16 +187,16 @@ let circulo
 let h = prompt('isnerte la altura');*/
 
 let figura = prompt('Introduce la figura que deseas calcuar');
-if (figura === triangulo){
+if (figura === "triangulo"){
     let b = prompt('inserte la base');
     let h = prompt('inserte la altura');
     console.log((parseInt(b)*parseInt(h))/2);
-}else if(figura === rectangulo){
+}else if(figura === "rectangulo"){
     let b2 = prompt('inserte la base');
     let h2 = prompt('inserte la altura');
     console.log(parseInt(b2)*parseInt(h2));
 }else {
-    if (figura === circulo){
+    if (figura === "circulo"){
     let r = prompt('inserte el radio');
     console.log(Math.PI*(parseInt(r)*parseInt(r)));
     }
